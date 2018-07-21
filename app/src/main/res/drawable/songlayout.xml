@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layoutheight"
+        android:layout_marginLeft="@dimen/layout_marginLeft"
+        android:layout_marginTop="@dimen/layout_marginTop"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layoutheight"
+            android:src="@drawable/artist_name" />
+
+        <TextView
+            android:id="@+id/singername"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layoutheight"
+            android:paddingLeft="@dimen/padding_left"
+            android:text="@string/singername"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layoutheight"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginTop="@dimen/layout_marginTop"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layoutheight"
+            android:src="@drawable/song_icon" />
+
+        <TextView
+            android:id="@+id/songname"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layoutheight"
+            android:paddingLeft="@dimen/padding_left"
+            android:text="@string/songname"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layoutheight1"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margintop"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="@dimen/margintop"
+            android:layout_height="@dimen/margintop"
+            android:background="@drawable/ic_skip_previous_black_24dp" />
+
+        <Button
+            android:id="@+id/buttonplay"
+            android:layout_width="@dimen/margintop"
+            android:layout_height="@dimen/margintop"
+            android:layout_marginLeft="@dimen/imageheight1"
+            android:layout_marginRight="@dimen/imageheight1"
+            android:background="@drawable/ic_play_circle_outline_black_24dp" />
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="@dimen/margintop"
+            android:layout_height="@dimen/margintop"
+            android:background="@drawable/ic_skip_next_black_24dp" />
+    </LinearLayout>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margintop"
+        android:layout_marginBottom="@dimen/marginbottom"
+        />
+
+</LinearLayout>
